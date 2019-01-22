@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.library.pojo.Administrator" table="administrator">
+        <id name="adminId" type="java.lang.String" column="ADMINISTRATOR_ID"/>
+        <property name="password" type="java.lang.String" column="PASSWORD"/>
+        <property name="name" type="java.lang.String" column="NAME"/>
+        <property name="profile" type="java.lang.String" column="PROFILE_PICTURE"/>
+        <property name="intime" type="java.util.Date" column="INTIME"/>
+    </class>
+</hibernate-mapping>

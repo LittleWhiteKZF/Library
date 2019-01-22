@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <package name="login" namespace="/" extends="struts-default">
+        <action name="login" class="com.library.action.LoginAction">
+            <result name="success">/Library/stu/home_page.jsp</result>
+            <result name="error">/Library/loginError.jsp</result>
+            <result name="admin">/Library/admin/home_page_admin.jsp</result>
+        </action>
+        <action name="changePwd" class="com.library.action.ChangeAction">
+            <result name="success">/Library/pwdSuccess.jsp</result>
+            <result name="error">/Library/pwdError.jsp</result>
+        </action>
+        <action name="flush" class="com.library.action.LoginAction" method="flushStudent"/>
+        <action name="changeAdmin" class="com.library.action.ChangeAction" method="changeAdmin">
+            <result name="success">/Library/pwdAdSuccess.jsp</result>
+            <result name="error">/Library/pwdAdError.jsp</result>
+        </action>
+    </package>
+
+    <package name="seatIn" namespace="/" extends="struts-default">
+        <interceptors>
+            <interceptor-stack name="tokenStack">
+                <interceptor-ref name="token"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="tokenStack"/>
+        <action name="seatIn" class="com.library.action.SeatOpAction">
+            <result name="success">/Library/stu/seating.jsp</result>
+            <result name="invalid.token">/Library/stu/seating.jsp</result>
+        </action>
+    </package>
+
+
+    <package name="seat" namespace="/" extends="struts-default">
+
+
+        <action name="showSeats" class="com.library.action.SeatOpAction" method="showSeats">
+        </action>
+
+        <action name="setSeat" class="com.library.action.SeatOpAction" method="setSeatIn">
+        </action>
+
+        <action name="leave" class="com.library.action.SeatOpAction" method="leaveSeat">
+            <result name="leave">/Library/stu/choose.jsp</result>
+        </action>
+        <action name="showReport" class="com.library.action.ReportOpAction" method="showReport">
+        </action>
+
+        <action name="minus" class="com.library.action.ReportOpAction" method="minus">
+            <result name="success"></result>
+        </action>
+
+        <action name="ignore" class="com.library.action.ReportOpAction" method="ignore">
+            <result name="success"></result>
+        </action>
+
+        <action name="remove" class="com.library.action.SeatOpAction" method="remove">
+            <result name="leave">/Library/admin/choose_admin.jsp</result>
+        </action>
+
+        <action name="getRecord" class="com.library.action.SeatOpAction" method="getRecord"/>
+
+        <action name="shortLeave" class="com.library.action.SeatOpAction" method="shortLeave"/>
+
+        <action name="comeback" class="com.library.action.SeatOpAction" method="comeback"/>
+
+    </package>
+
+
+    <package name="json" extends="json-default" namespace="/">
+
+        <action name="search" class="com.library.action.SeatOpAction" method="search">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="report" class="com.library.action.ReportOpAction" method="subReport">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="back" class="com.library.action.SeatOpAction" method="backToCountdown">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="isLeave" class="com.library.action.SeatOpAction" method="isLeave">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="isShortLeave" class="com.library.action.SeatOpAction" method="isShortLeave">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="isNull" class="com.library.action.PostOpAction" method="isNull">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
+
+
+    <package name="book" namespace="/" extends="struts-default">
+        <action name="seekBook" class="com.library.action.SeekAction" method="seekBook">
+            <result name="success">/Library/stu/search.jsp</result>
+        </action>
+
+        <action name="showBooks" class="com.library.action.SeekAction" method="showBook"/>
+
+    </package>
+
+
+    <package name="post" namespace="/" extends="struts-default">
+        <action name="showPosts" class="com.library.action.PostOpAction" method="showPosts"/>
+        <action name="changePage" class="com.library.action.PostOpAction" method="changePage"/>
+        <action name="findPosts" class="com.library.action.PostOpAction" method="findPost">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+        <action name="publishPost" class="com.library.action.PostOpAction" method="publishPost">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+
+        <action name="publishComment" class="com.library.action.CommentAction" method="publishComment">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+        <action name="like" class="com.library.action.CommentAction" method="like">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+        <action name="dislike" class="com.library.action.CommentAction" method="dislike">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+
+        <action name="doPraise" class="com.library.action.CommentAction" method="doPraise">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+        <action name="delPraise" class="com.library.action.CommentAction" method="delPraise">
+            <result name="success">/Library/stu/review.jsp</result>
+        </action>
+
+    </package>
+
+
+</struts>

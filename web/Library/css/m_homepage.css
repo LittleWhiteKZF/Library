@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,p,a,div,ul,li{
+	margin:0;
+	padding:0;
+	
+}
+
+body{
+	height: 0px;
+	background:#4fc8d3;
+	font-family:"微软雅黑", "黑体";
+}
+
+.container{
+	width:1230px;
+	height:100%;
+	position:absolute;
+	z-index:2;
+}
+
+.personal_information{
+	width:95%;
+	height:1000px;
+	margin:0 auto;
+	margin-top:55px;
+	border-radius:20px;
+	box-shadow: 0px 0px 20px #e0dddd;
+	border:solid;
+	border-width:1px;
+	border-color:#FFF;
+}
+
+.ranking_list{
+	width:95%;
+	height:auto;
+	margin:0 auto;
+	margin-top:25px;
+	background:#FFF ;
+	border-radius:20px;
+	box-shadow: 0px 0px 20px #e0dddd;
+	border:solid;
+	border-width:1px;
+	border-color:#FFF;
+	margin-bottom:50px;
+	padding-bottom:50px;
+	overflow:hidden;
+	clear:both;
+}
+
+.ranking_list img{
+	display:none;	
+}
+
+.personal_information_background{
+	width:95%;
+	height:260px;
+	border-radius:20px 20px 0px 0px;
+	position:absolute;
+	background:#333;
+	z-index:-100;
+	filter: opacity(55%);
+	position:absolute;
+	overflow: hidden;
+}
+
+.personal_information_background img{
+	width: 1500px;
+    height: 1000px;
+	margin-left:-150px;
+	margin-top:-500px;
+	background-color:#FFF;
+    position: absolute;
+	overflow:hidden;
+    filter: blur(30px);
+}
+
+.photo{
+	width:300px;
+	height:300px;
+	background:url(../images/201810081019_photo.jpg) no-repeat center;
+	border:solid 5px #999;
+	border-radius:150px;
+	margin:0 auto;
+	margin-top:100px;
+	overflow:hidden;
+}
+
+.photo img{
+	width:300px;
+	height:300px;
+}
+
+.information{
+	width:80%;
+	height:30%;
+	margin:0 auto;
+	margin-top:20px;
+}
+
+.information_table{
+	color:#000;
+	font-weight:400;
+	font-size:50px;
+	margin:0 auto;	
+}
+
+.turn_to_change_password{
+	width:400px;
+	height:120px;
+	border-radius:60px;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	color:#FFF;
+	text-align:center;
+	font-size:70px;
+	line-height:120px;
+	margin:0 auto;
+	margin-top:80px;
+	cursor:pointer;
+}
+
+.title{
+	width:100%;
+	height:150px;
+	font:"微软雅黑 Light", "黑体";
+	font-size:80px;
+	text-align:center;
+	font-weight:100;
+	line-height:150px;
+	border-radius:10px 10px 0px 0px;
+	background:#60f7e3;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	color:#FFF;
+	margin-top:0px;
+}
+
+.about{
+	position:absolute;
+	width:700px;
+	height:400px;
+	margin-top:680px;
+	margin-bottom:30px;
+	background:#FFF;
+	border-radius:20px;
+	overflow:hidden;
+	box-shadow: 0px 0px 20px #e0dddd;
+	display:none;
+}
+
+.about_title{
+	width:100%;
+	height:12%;;
+	background: -webkit-linear-gradient(left,  #ff9a9e , #fecfef);
+	background: -o-linear-gradient(right,  #ff9a9e , #fecfef); 
+	background: -moz-linear-gradient(right,  #ff9a9e , #fecfef);
+	background: linear-gradient(to right, #ff9a9e , #fecfef);
+	color:#FFF;
+	font-size:30px;
+	text-indent:1em;
+	line-height:50px;
+	font-weight:100;
+}	
+
+.mask{
+	width:100%;
+	height:100%;
+	position:fixed;
+    display:none;
+	z-index:10;
+	background:#000;
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+}
+
+.change_password_container{
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:12;	
+	display:none;
+}
+
+.change_password_window{
+	width:1000px;
+	height:700px;
+	margin:0 auto;
+	margin-top:700px;
+	border-radius:20px;
+	background:#FFF;
+	overflow:hidden;
+}
+
+.close{
+	position:absolute;
+	margin-left:950px;
+	top:640px;
+	width:34px;
+	height:34px;
+	margin-top:70px;
+	margin-right:25px;
+	cursor:pointer;
+}
+
+.change_password_body{
+	width:100%;
+	height:450px;
+	margin-top:40px;
+}
+
+.change_password_text{
+	font:"微软雅黑 Light", "黑体";
+	font-size:25px;
+	color:#4fc8d3;
+}
+
+.change_password_input{
+	font:"微软雅黑 Light", "黑体";
+	font-size:50px;
+	color:#000;
+	border: 0px;
+	outline:none;
+	background-color: transparent;
+	margin-top:60px;
+	border-bottom:solid 1px #999;
+	width:820px;
+	padding-left:60px;
+	margin-left:85px;
+}
+
+.submit{
+	width:900px;
+	height:100px;
+	margin:0 auto;
+	margin-top:80px;
+	border-radius:50px;
+	font-size:60px;
+	color:#FFF;
+	line-height:100px;
+	text-align:center;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	cursor:pointer;
+}
+
+.ranking_list_table{
+	padding-right:40px;
+	color:#000;
+	font-weight:400;
+	text-align:center;
+	letter-spacing:0.2em;
+	width:92%;
+	font-size:50px;
+	margin:0 auto;
+	margin-top:50px;
+	
+}
+
+.ranking_list_table td{
+	height:70px;
+}
+
+.password_icon{
+	position: absolute;
+	margin-top:60px;
+	margin-left:82px;
+	z-index:15;
+	background-image:url(../images/m_password_icon.png);
+	background-repeat: no-repeat; 
+	background-position: 0px 0px; 
+	width: 60px;
+	height: 60px; 
+}

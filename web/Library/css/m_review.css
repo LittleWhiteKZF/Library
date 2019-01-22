@@ -1,0 +1,439 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,p,a,div,ul,li,td,te,table{
+	margin:0;
+	padding:0;
+}
+
+body{
+	height: 0px;
+	width:1250px;
+	background-color:#fff;
+	font-family:"微软雅黑", "黑体";
+	overflow-x:auto;
+}
+
+.container{
+	width:1250px;;
+	height:100%;
+	position:absolute;
+	z-index:2;
+}
+
+.clearfloat{
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+} 
+
+.mask{
+	width:1250px;
+	height:2260px;
+	position:fixed;
+    display:none;
+	z-index:10;
+	background:#000;
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+}
+
+.close{
+	width:34px;
+	height:34px;
+	margin-top:20px;
+	margin-right:25px;
+	float:right;
+	cursor:pointer;
+}
+
+.review_box{
+	width:95%;
+	height:2000px;
+	margin:0 auto;
+	background:#FFF;
+	margin-top:50px;
+	margin-bottom:60px;
+}
+
+.review_post{
+	width:95%;
+	height:80px;
+	margin:0 auto;
+	margin-top:20px;
+}
+
+.review_post_button{
+	width:650px;
+	height:140px;
+	cursor:pointer;
+	margin:0 auto;
+	text-align:center;
+	line-height:140px;
+	border-radius:70px;
+	color:#FFF;
+	font-size:80px;
+	font-weight:100;
+	letter-spacing:0.2em;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+}
+
+.review_search{
+	margin-top:47px;
+	margin-left:200px;
+	float:left;	
+}
+
+.review_search_button{
+	width:80px;
+	height:80px;
+	margin-top:40px;
+	margin-left:20px;
+	background:url(../images/m_search_button.png);
+	float:left;
+}
+
+.review_search_input{
+	width:700px;
+	height:60px;
+	border:solid 1px #000;
+	font-size:42px;
+}
+
+.review_show_box{
+	width:100%;
+	height:auto;
+	overflow-y:auto;
+	overflow-x:auto;
+	float:left;	
+}
+
+.review_show_box::-webkit-scrollbar{
+	display:none;
+}
+
+.review_show{
+	width:95%;
+	min-height:200px;
+	border-radius:20px;
+	box-shadow: 0px 0px 50px #e0dddd;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:20px;
+	padding-bottom:40px;
+}
+
+.comment_show_info .user_photo{
+	margin-left:0px;
+}
+
+.comment_list{
+	width:90%;
+	height:auto;
+	min-height:150px;
+	background:#FFF;
+	border-radius:20px;
+	box-shadow: 0px 0px 50px #e0dddd;
+	margin:0 auto;
+	display:none;
+}
+
+.comment_submit{
+	width:100%;
+	height:60px;
+	margin-bottom:80px;
+}
+
+.comment_input{
+	width:800px;
+	height:80px;
+	margin-top:30px;
+	margin-left:30px;
+	border:solid 1px #000;
+	font-size:42px;
+	line-height:80px;
+	float:left;
+}
+
+.comment_submit_button{
+	margin-top:30px;
+	margin-left:10px;
+	width:140px;
+	height:80px;
+	background:#89e4ec;
+	color:#FFF;
+	border-radius:15px;
+	font-size:42px;
+	line-height:80px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+
+.comment_submit_button:hover{
+	background:#68dbe5;
+}
+
+
+.user_info{
+	width:100%;;
+	height:60px;
+	margin-bottom:5px;
+	float:left;
+}
+
+.user_photo{
+	margin-left:25px;
+	width:60px;
+	height:60px;
+	float:left;
+}
+
+.user_photo img{
+	margin-top:3px;
+	width:60px;
+	height:60px;
+}
+
+.user_name{
+	margin-left:15px;
+	line-height:60px;
+	font-family:"微软雅黑", "黑体";
+	font-size:40px;
+	font-weight:600;
+}
+
+.post_time{
+	margin-left:10px;
+	line-height:60px;
+	font-size:24px;
+	color:#999;
+}
+
+.review{
+	width:549px;
+	float:left;
+}
+
+.review_title{
+	margin-left:25px;
+	padding-top:45px;
+	width:95%;
+	height:60px;
+	font-size:55px;
+	line-height:60px;
+	text-align:center;
+	overflow:hidden;
+}
+
+.review_book{
+	width:95%;
+	font-size:34px;
+	height:100px;
+	margin-left:20px;
+	line-height:110px;
+	text-align:right;
+	overflow:hidden;
+	color:#999999;
+}
+
+.review_title p{
+	margin-left:25px;	
+}
+
+.review_content{
+	width:95%;
+	height:auto;
+	font-size:18px;
+	line-height:75px;
+	margin-top:10px;
+	padding-left:35px;
+}
+
+.review_content::-webkit-scrollbar{
+	display:none
+}
+
+.review_option{
+	width:100%;
+	height:120px;
+	margin-top:25px;
+}
+
+.approve_button{
+	margin-top:8px;
+	margin-left:35px;
+	width:240px;
+	height:80px;
+	background:#89e4ec;
+	color:#FFF;
+	border-radius:15px;
+	font-size:42px;
+	line-height:80px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+
+.approve_button img{
+	height:80px;	
+}
+
+.against_button img{
+	height:80px;	
+}
+
+.approve_button:hover{
+	background:#68dbe5;
+}
+
+.against_button{
+	margin-top:8px;
+	margin-left:25px;
+	width:100px;
+	height:80px;
+	background:#89e4ec;
+	color:#FFF;
+	border-radius:15px;
+	font-size:16px;
+	line-height:30px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+
+.against_button:hover{
+	background:#68dbe5;
+}
+
+.comment_button{
+	width:260px;
+	height:80px;
+	margin-left:20px;
+	font-size:42px;
+	color:#666;
+	line-height:80px;
+	float:left;	
+	cursor:pointer;
+	display:block;
+}
+
+.close_comment_button{
+	width:260px;
+	height:80px;
+	margin-left:20px;
+	font-size:42px;
+	color:#666;
+	line-height:80px;
+	float:left;	
+	cursor:pointer;
+	display:none;
+}
+
+.comment_button:hover{
+	color:#333;
+}
+
+.comment_show{
+	width:94%;
+	height:auto;	
+	border-top:solid 1px #CCCCCC;
+	margin:0 auto;
+}
+
+.comment_show_info{
+	width:100%;
+	height:60px;
+	margin-top:20px;
+}
+
+.comment_show_info .user_name{
+	font-size:32px;
+	font-weight:500;	
+}
+
+
+.comment_show_info .post_time{
+	float:right;
+}
+
+.comment_content{
+	width:100%;
+	height:auto;
+	margin-top:10px;
+	font-size:20px;
+	line-height:50px;
+	padding-bottom:10px;
+}
+
+.post_container{
+	width:1250px;;
+	height:100%;
+	position:fixed;
+	z-index:12;	
+	display:none;
+}
+
+.post_window{
+	width:90%;
+	height:1500px;
+	border-radius:20px;
+	margin:0 auto;
+	margin-top:15%;
+	background:#FFF;
+	box-shadow: 0px 0px 50px #FFF;
+}
+
+.post_title{
+	font:"微软雅黑 Light", "黑体";
+	font-size:30px;
+	text-align:center;
+	color:#4fc8d3;
+}
+
+.post_body{
+	width:90%;
+	height:90%;
+	margin-top:30px;
+	margin-left:50px;
+	float:left;
+}
+
+.post_text{
+	color:#000;
+	text-align:center;
+	font-size:50px;
+}
+
+.post_text input{
+	color:#000;
+	border:solid 1px #000;
+	text-align:left;
+	width:100%;
+	display: block;
+}
+
+.post_body textarea{
+	color:#000;
+	text-align:left;
+	width:100%;
+	border:solid 1px #000;
+	height:870px;
+	resize:none;
+}
+
+.submit{
+	width:900px;
+	height:100px;
+	margin:0 auto;
+	margin-top:30px;
+	border-radius:50px;
+	font-weight:100;
+	font-size:60px;
+	color:#FFF;
+	line-height:100px;
+	text-align:center;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	cursor:pointer;
+}

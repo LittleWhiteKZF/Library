@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.library.pojo">
+        <class name="com.library.pojo.User" table="user">
+            <id name="sid" type="java.lang.String" column="STUDENT_ID"/>
+            <property name="password" type="java.lang.String" column="PASSWORD"/>
+            <property name="name" type="java.lang.String" column="NAME"/>
+            <property name="profile" type="java.lang.String" column="PROFILE_PICTURE"/>
+            <property name="credit" type="java.lang.Integer" column="CREDIT_SCORE"/>
+            <property name="time" type="java.lang.Double" column="TOTAL_LEARNING_TIME"/>
+            <property name="major" type="java.lang.String" column="MAJOR"/>
+        </class>
+</hibernate-mapping>

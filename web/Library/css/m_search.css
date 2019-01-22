@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,p,a,div,ul,li,td,te,table{
+	margin:0;
+	padding:0;
+}
+
+body{
+	height: 0px;
+	width:1250px;
+	background-color:#fff;
+	font-family:"微软雅黑", "黑体";
+	overflow-x:auto;
+}
+
+.container{
+	width:1250px;;
+	height:100%;
+	position:absolute;
+	z-index:2;
+}
+
+.search_box{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.search_input{
+	width:100%;
+	height:120px;
+	margin-top:10px;
+}
+
+.result_show{
+	width:95%;
+	height:auto;
+	margin:0 auto;
+}
+
+.search_input_title{
+	font:"微软雅黑 Light", "黑体";
+	line-height:80px;
+	font-size:45px;
+	text-align:center;
+	color:#000;
+	margin-top:0px;	
+}
+
+.book_search_button{
+	width:80px;
+	height:80px;
+	margin-left:30px;
+	background:url(../images/m_search_button.png);
+	float:left;
+}
+
+.search_input_text{
+	width:14.5em;
+	height:55px;
+	font:"微软雅黑 Light", "黑体";
+	font-size:45px;
+	color:#000;
+	border:solid 1px #000;
+	margin-top:0px;	
+}
+
+.result_show_title{
+	width:100%;
+	height:70px;
+	font-size:45px;
+	line-height:70px;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	color:#FFF;
+	font-weight:100;
+	border-radius:20px;
+	text-indent:10px;;
+	text-align:center;
+	box-shadow: 0px 0px 50px #e0dddd;
+}
+
+.result_show_box{
+	width:100%;
+	height:auto;	
+}
+
+.result_show_book{
+	width:100%;
+	height:400px;
+	margin-top:25px;
+	margin-top:25px;
+	border-radius:20px;
+	box-shadow: 0px 0px 50px #e0dddd;
+}
+
+.book_cover{
+	width:280px;
+	height:360px;
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+	float:left;
+}
+
+.book_information{
+	width:70%;
+	height:360px;
+	font-size:40px;
+	line-height:70px;
+	margin-top:20px;
+	float:left;
+}
+
+.book_cover img{
+	height:360px;	
+}

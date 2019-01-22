@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- 1. 配置数据库信息 -->
+        <!-- 方言(连接的数据库类型) -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.url">jdbc:mysql://localhost/library?characterEncoding=utf8</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1234</property>
+
+
+        <!-- 2. 其他配置 -->
+        <!-- 显示生成的SQL语句 -->
+        <property name="hibernate.show_sql">false</property>
+
+        <!-- 3. 导入映射文件 -->
+        <mapping resource="com/library/pojo/User.hbm.xml" />
+        <mapping resource="com/library/pojo/Seat.hbm.xml"/>
+        <mapping resource="com/library/pojo/SeatRecord.hbm.xml"/>
+        <mapping resource="com/library/pojo/Administrator.hbm.xml"/>
+        <mapping resource="com/library/pojo/Report.hbm.xml"/>
+        <mapping resource="com/library/pojo/Book.hbm.xml"/>
+        <mapping resource="com/library/pojo/Post.hbm.xml"/>
+        <mapping resource="com/library/pojo/Comment.hbm.xml"/>
+        <mapping resource="com/library/pojo/Praise.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

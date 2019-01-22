@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.library.pojo">
+    <class name="com.library.pojo.Post" table="post">
+        <id name="pid" type="java.lang.Integer" column="POST_ID">
+            <generator class="native"/>
+        </id>
+        <property name="content" type="java.lang.String" column="CONTENT"/>
+        <property name="user" type="java.lang.String" column="USER_ID"/>
+        <property name="userName" type="java.lang.String" column="USER_NAME"/>
+        <property name="time" type="java.util.Date" column="TIME"/>
+        <property name="good" type="java.lang.Integer" column="GOOD"/>
+        <property name="profile" type="java.lang.String" column="PROFILE"/>
+        <property name="title" type="java.lang.String" column="TITLE"/>
+        <property name="book" type="java.lang.String" column="BOOK"/>
+
+    </class>
+</hibernate-mapping>

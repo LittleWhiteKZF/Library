@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.library.pojo.Report" table="report">
+        <id name="reportId" type="java.lang.Integer" column="REPORT_ID">
+            <generator class="native"/>
+        </id>
+        <property name="reportUser" type="java.lang.String" column="REPORT_USER"/>
+        <property name="reportedUser" type="java.lang.String" column="REPORTED_USER"/>
+        <property name="seatId" type="java.lang.String" column="SEAT_ID"/>
+        <property name="reason" type="java.lang.String" column="REASON"/>
+        <property name="date" type="java.util.Date" column="DATE"/>
+        <property name="status" type="java.lang.Integer" column="STATUS"/>
+    </class>
+</hibernate-mapping>

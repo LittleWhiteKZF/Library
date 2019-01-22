@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,p,a,div,ul,li{
+	margin:0;
+	padding:0;
+}
+
+body{
+	height: 0px;
+}
+
+.login_container{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:url(../images/m_background.jpg);
+	z-index:2;
+	margin:0 auto;
+}
+
+.login_main{
+	width:auto;
+	height:900px;
+	margin:0 auto;
+}
+
+.logo{
+	width: 100%;
+	height: 340px;
+	margin:0 auto;
+	margin-top:20px;
+	background:url(../images/m_logo.png) no-repeat;
+}
+
+.logo img{
+	height:450px;
+}
+
+.login{
+	width:90%;
+	height:900px;
+	margin:0 auto;
+	background-color:#FFF;
+	border-radius:30px;
+	box-shadow: 0px 0px 80px #e0dddd;
+}
+
+.login_title{
+	width:auto;
+	height:120px;
+	font:"微软雅黑 Light", "黑体";
+	font-size:80px;
+	text-align:center;
+	font-weight:100;
+	border-radius:30px 30px 0px 0px;
+	background:#60f7e3;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	color:#FFF;
+	padding-top:20px;
+	margin-bottom:150px;
+}
+
+.login_text{
+	padding-left:40px;
+	font:"微软雅黑 Light", "黑体";
+	font-size:50px;
+	color:#4fc8d3;
+	margin-top:50px;
+}
+
+.login_text_input{
+	width:12em;
+	font:"微软雅黑 Light", "黑体";
+	font-size:50px;
+	color:#000;
+	margin-top:20px;
+	margin-bottom:10px;
+	border: 0px;
+	outline:none;
+	background-color: transparent;
+	border-bottom:solid 1px #999;
+	padding-left:60px;
+}
+
+.identity_select{
+	width:120px;
+	height:60px;
+	float:right;
+	margin-right:25px;
+	margin-top:25px;
+	background-color: transparent;
+	font-size:20px;
+}
+
+.submit{
+	width:800px;
+	height:100px;
+	border-radius:50px;
+	background-image: linear-gradient( 135deg, #60f7e3 10%, #4ea6ee 100%);
+	text-align:center;
+	font-weight:100;
+	cursor:pointer;
+	font-size:60px;
+	line-height:100px;
+	color:#FFFFFF;
+	margin:0 auto;
+	margin-top:150px;
+}
+
+.cancel{
+	width:700px;
+	height:100px;
+	margin:0 auto;
+	font-size:60px;
+	text-align:center;
+	line-height:100px;
+	background:#4fc8d3;
+	color:#FFF;
+	border-radius:10px;
+	margin-top:30px;
+	cursor:pointer;
+}
+
+.button_text{
+	font:"微软雅黑 Light", "黑体";
+	font-size:30px;
+	color:#FFF;
+	padding-top:2px;
+	margin-right:25px;
+	float:right;
+}
+
+.user_icon{
+	position: absolute;
+	margin-top:15px;
+	z-index:15;
+	background-image:url(../images/m_user_input_icon.png);
+	background-repeat: no-repeat; 
+	background-position: 0px 0px; 
+	width: 60px;
+	height: 60px; 
+}
+
+.password_icon{
+	position: absolute;
+	margin-top:15px;
+	z-index:15;
+	background-image:url(../images/m_password_icon.png);
+	background-repeat: no-repeat; 
+	background-position: 0px 0px; 
+	width: 60px;
+	height: 60px; 
+}

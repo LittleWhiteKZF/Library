@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.library.pojo">
+        <class name="com.library.pojo.Praise" table="praise">
+            <id name="pid" type="java.lang.Integer" column="PRAISE_ID">
+                <generator class="native"/>
+            </id>
+            <property name="userid" type="java.lang.String" column="PRAISE_USER"/>
+            <property name="postid" type="java.lang.Integer" column="PRAISE_POST"/>
+            <property name="time" type="java.util.Date" column="TIME"/>
+
+        </class>
+</hibernate-mapping>

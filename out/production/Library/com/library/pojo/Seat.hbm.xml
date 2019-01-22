@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.library.pojo.Seat" table="seat">
+        <id name="seatId" type="java.lang.String" column="SEAT_ID"/>
+        <property name="floor" type="java.lang.Integer" column="FLOOR"/>
+        <property name="status" type="java.lang.Boolean" column="STATUS"/>
+    </class>
+</hibernate-mapping>

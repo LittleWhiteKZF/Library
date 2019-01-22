@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.library.pojo">
+        <class name="com.library.pojo.Book" table="book">
+            <id name="bid" type="java.lang.String" column="BOOK_ID"/>
+            <property name="name" type="java.lang.String" column="NAME"/>
+            <property name="author" type="java.lang.String" column="AUTHOR"/>
+            <property name="press" type="java.lang.String" column="PRESS"/>
+            <property name="total_amount" type="java.lang.Integer" column="TOTAL_AMOUNT"/>
+            <property name="remain_amount" type="java.lang.Integer" column="REMAIN_AMOUNT"/>
+            <property name="location" type="java.lang.String" column="LOCATION"/>
+            <property name="picture" type="java.lang.String" column="PICTURE"/>
+            <property name="status" type="java.lang.Boolean" column="STATUS"/>
+        </class>
+</hibernate-mapping>

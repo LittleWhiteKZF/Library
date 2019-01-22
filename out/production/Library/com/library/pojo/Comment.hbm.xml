@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.library.pojo.Comment" table="COMMENT">
+        <id name="commentId" type="java.lang.Integer" column="COMMENT_ID">
+            <generator class="native"/>
+        </id>
+        <property name="postId" type="java.lang.Integer" column="POST_ID"/>
+        <property name="userId" type="java.lang.String" column="USER"/>
+        <property name="userName" type="java.lang.String" column="USER_NAME"/>
+        <property name="content" type="java.lang.String" column="CONTENT"/>
+        <property name="time" type="java.util.Date" column="TIME"/>
+        <property name="profile" type="java.lang.String" column="PROFILE"/>
+    </class>
+</hibernate-mapping>
